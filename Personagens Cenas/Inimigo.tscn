@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://br0vd7lommcxh"]
+
+[ext_resource type="Script" uid="uid://cfm0o6pub67r1" path="res://Personagens Scripts/inimigo.gd" id="1_g1ieq"]
+[ext_resource type="Texture2D" uid="uid://dqh2tmq4lldxs" path="res://icon.svg" id="1_tg3w1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g1ieq"]
+size = Vector2(128, 128)
+
+[node name="Inimigo" type="CharacterBody2D"]
+script = ExtResource("1_g1ieq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_tg3w1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_g1ieq")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

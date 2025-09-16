@@ -1,17 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://bkghphbogbuk7"]
+[gd_scene load_steps=4 format=3 uid="uid://bkghphbogbuk7"]
 
-[ext_resource type="PackedScene" uid="uid://gp4ksdo08kh" path="res://Player.tscn" id="1_glv2v"]
+[ext_resource type="PackedScene" uid="uid://gp4ksdo08kh" path="res://Personagens Cenas/Player.tscn" id="1_glv2v"]
+[ext_resource type="PackedScene" uid="uid://br0vd7lommcxh" path="res://Personagens Cenas/Inimigo.tscn" id="1_uu6xs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_glv2v"]
-size = Vector2(982.25, 122.5)
+size = Vector2(1153.125, 122.5)
 
 [node name="Main" type="Node2D"]
 
+[node name="Inimigo" parent="." instance=ExtResource("1_uu6xs")]
+position = Vector2(595, 368)
+
 [node name="Player" parent="." instance=ExtResource("1_glv2v")]
-position = Vector2(277, 126)
+position = Vector2(842, 137)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(492, 580)
+position = Vector2(577.4375, 580)
 shape = SubResource("RectangleShape2D_glv2v")
