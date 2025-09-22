@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://br0vd7lommcxh"]
+[gd_scene load_steps=6 format=3 uid="uid://br0vd7lommcxh"]
 
 [ext_resource type="Script" uid="uid://cfm0o6pub67r1" path="res://Personagens Scripts/inimigo.gd" id="1_g1ieq"]
 [ext_resource type="Texture2D" uid="uid://dqh2tmq4lldxs" path="res://icon.svg" id="1_tg3w1"]
@@ -6,15 +6,39 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g1ieq"]
 size = Vector2(128, 128)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4328v"]
+size = Vector2(710, 251)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g1ieq"]
+radius = 58.0
+height = 143.0
+
 [node name="Inimigo" type="CharacterBody2D"]
 script = ExtResource("1_g1ieq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_tg3w1")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="DefaultColision" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_g1ieq")
 
 [node name="Timer" type="Timer" parent="."]
 
+[node name="HuntRange" type="Area2D" parent="."]
+
+[node name="HuntColision" type="CollisionShape2D" parent="HuntRange"]
+position = Vector2(-1, -61)
+shape = SubResource("RectangleShape2D_4328v")
+debug_color = Color(0.99478465, 0.06870298, 3.85046e-07, 0.41960785)
+
+[node name="KillRange" type="Area2D" parent="."]
+
+[node name="KillColision" type="CollisionShape2D" parent="KillRange"]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_g1ieq")
+debug_color = Color(0.88365537, 0.00032863676, 0.8143432, 0.41960785)
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="HuntRange" to="." method="_on_hunt_range_body_entered"]
+[connection signal="body_exited" from="HuntRange" to="." method="_on_hunt_range_body_exited"]
+[connection signal="body_entered" from="KillRange" to="." method="_on_kill_range_body_entered"]

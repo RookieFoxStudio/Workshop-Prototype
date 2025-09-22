@@ -1,4 +1,6 @@
 extends CharacterBody2D
+
+
 #-------------------------------------------  MOVIMENTO  -------------------------------------------
 @export var max_speed : float = 500   ##define a velocidade máxima do movimento horizontal
 var acceleration : float  = 750  ##define o quão rápido o jogador chega na velocidade máxima
@@ -11,6 +13,11 @@ var jump_cut : float = 0.5  ##fator que "corta" a velocidade do pulo quando o bo
 ##Delta = 1/Frame Rate(Hz)
 
 #-------------------------------------------
+
+func _ready() -> void:
+	add_to_group("Player")
+	
+	
 func _physics_process(delta):  ##função da Godot que é chamada em intervalos fixos, ideal para cálculos de física
 	#-------------------------------------------  GRAVIDADE  -------------------------------------------
 	if not is_on_floor(): ##se o jogador NÃO estiver no chão...
