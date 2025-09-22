@@ -1,10 +1,10 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1758497197
-icon.svg::CompressedTexture2D::8298408138784963284::1757992415::1757992536::1::::<><><>0<>0<>be283d429225a1f9536fd69a322ef634<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-Main.tscn::PackedScene::3101147562308154412::1757997385::0::1::::<><><>0<>0<><>::uid://gp4ksdo08kh::::res://Personagens Cenas/Player.tscn<>uid://br0vd7lommcxh::::res://Personagens Cenas/Inimigo.tscn
-::res://Personagens Cenas/::1757997224
-Inimigo.tscn::PackedScene::3632522582013616317::1757997224::0::1::::<><><>0<>0<><>::uid://cfm0o6pub67r1::::res://Personagens Scripts/inimigo.gd<>uid://dqh2tmq4lldxs::::res://icon.svg
-Player.tscn::PackedScene::13349362635114599::1757994536::0::1::::<><><>0<>0<><>::uid://li6fyeqx858c::::res://Personagens Scripts/player.gd<>uid://dqh2tmq4lldxs::::res://icon.svg
-::res://Personagens Scripts/::1757997311
-inimigo.gd::GDScript::5150102696866133028::1757997311::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.gd::GDScript::790484725294775764::1757992565::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://::1758505984
+icon.svg::CompressedTexture2D::8298408138784963284::1757049401::1758505985::1::::<><><>0<>0<>be283d429225a1f9536fd69a322ef634<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+Main.tscn::PackedScene::3101147562308154412::1758505950::0::1::::<><><>0<>0<><>::uid://gp4ksdo08kh::::res://Personagens Cenas/Player.tscn<>uid://br0vd7lommcxh::::res://Personagens Cenas/Inimigo.tscn
+::res://Personagens Cenas/::1758505950
+Inimigo.tscn::PackedScene::3632522582013616317::1758505950::0::1::::<><><>0<>0<><>::uid://cfm0o6pub67r1::::res://Personagens Scripts/inimigo.gd<>uid://dqh2tmq4lldxs::::res://icon.svg
+Player.tscn::PackedScene::13349362635114599::1758032214::0::1::::<><><>0<>0<><>::uid://li6fyeqx858c::::res://Personagens Scripts/player.gd<>uid://dqh2tmq4lldxs::::res://icon.svg
+::res://Personagens Scripts/::1758505950
+inimigo.gd::GDScript::5150102696866133028::1758505950::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.gd::GDScript::790484725294775764::1758505950::0::1::::<>CharacterBody2D<><>0<>0<><>::

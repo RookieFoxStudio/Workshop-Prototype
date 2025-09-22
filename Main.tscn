@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://br0vd7lommcxh" path="res://Personagens Cenas/Inimigo.tscn" id="1_uu6xs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_glv2v"]
-size = Vector2(1153.125, 122.5)
+size = Vector2(1413.5625, 135)
 
 [node name="Main" type="Node2D"]
 
@@ -18,5 +18,5 @@ position = Vector2(842, 137)
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(577.4375, 580)
+position = Vector2(690.21875, 659.5)
 shape = SubResource("RectangleShape2D_glv2v")

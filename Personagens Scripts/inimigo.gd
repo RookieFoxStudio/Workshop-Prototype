@@ -5,8 +5,8 @@ enum State {MOVING_RIGHT, RESTING_RIGHT, MOVING_LEFT, RESTING_LEFT, HUNTING, RES
 @export var player:CharacterBody2D
 @export var speed:float = 200
 @export var gravidade:float = 900
-@export var  friction:float = 500
-@export var acceleration:float = 750
+@export var  friction:float = 400
+@export var acceleration:float = 650
 @export var left_limit:float = -100
 @export var right_limit:float = 100
 var direction: Vector2
