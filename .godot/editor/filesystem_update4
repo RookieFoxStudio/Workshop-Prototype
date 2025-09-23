@@ -1,4 +1,9 @@
+res://tela_fim.tscn
+res://tela_início.tscn
+res://tela_fim.gd
 res://Main.tscn
-res://Personagens Scripts/player.gd
+res://main.gd
+res://Personagens Cenas/Inimigo.tscn
 res://Personagens Scripts/inimigo.gd
+res://Personagens Scripts/player.gd
 res://Personagens Cenas/Player.tscn

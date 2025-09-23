@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://br0vd7lommcxh"]
 
 [ext_resource type="Script" uid="uid://cfm0o6pub67r1" path="res://Personagens Scripts/inimigo.gd" id="1_g1ieq"]
-[ext_resource type="Texture2D" uid="uid://dqh2tmq4lldxs" path="res://icon.svg" id="1_tg3w1"]
+[ext_resource type="Texture2D" uid="uid://cwfot612jdg5d" path="res://Assets/Tela inicio - workshop(base).jpg" id="2_g1ieq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g1ieq"]
 size = Vector2(128, 128)
@@ -17,7 +17,9 @@ height = 143.0
 script = ExtResource("1_g1ieq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_tg3w1")
+position = Vector2(-1.0000038, 1)
+scale = Vector2(0.077850275, 0.13836521)
+texture = ExtResource("2_g1ieq")
 
 [node name="DefaultColision" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_g1ieq")

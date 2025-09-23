@@ -12,15 +12,18 @@ var jump_cut : float = 0.5  ##fator que "corta" a velocidade do pulo quando o bo
 @export var gravity : float = 900  ##define o valor da gravidade (valor positivo no eixo y significa que vai para baixo)
 ##Delta = 1/Frame Rate(Hz)
 
+var health : bool = true	
 #-------------------------------------------
 
 func _ready() -> void:
 	add_to_group("Player")
-	
-	
+
 func _physics_process(delta):  ##função da Godot que é chamada em intervalos fixos, ideal para cálculos de física
-	gravidade(delta)
-	movement(delta)
+	if !health:
+		death()
+	else:
+		gravidade(delta)
+		movement(delta)
 	move_and_slide()  ##Função própria da godot que move o corpo com base no "velocity" e lida com colisões
 
 func gravidade(delta):
@@ -52,3 +55,9 @@ func movement(delta):
 		velocity.x = move_toward(velocity.x, direction * max_speed, acceleration * delta) #move para a direção até uma certa velocidade e com determinada aceleração
 	else: ##se não estiver pressionando...
 		velocity.x = move_toward(velocity.x, 0, friction * delta)  #a velocidade do jogador diminui até 0
+
+func death():
+	var collision = $CollisionShape2D
+	
+	self.visible = false
+	collision.disabled = true

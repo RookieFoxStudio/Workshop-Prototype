@@ -1,3 +1,11 @@
+VBoxContainer
+Button
+Label
+TextureRect
+ColorRect
+AudioStreamPlayer2D
+AnimationPlayer
+HBoxContainer
 Area2D
 CollisionShape2D
 Timer

@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=3 uid="uid://py2nj76okc1x"]
+
+[ext_resource type="Script" uid="uid://djfgdfpmsh5eh" path="res://tela_fim.gd" id="1_s2eql"]
+[ext_resource type="FontFile" uid="uid://duig7vdfq0g2x" path="res://Fontes/Quintessential/Quintessential-Regular.ttf" id="2_s2eql"]
+
+[node name="Game Over" type="Control" node_paths=PackedStringArray("time")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s2eql")
+time = NodePath("VBoxContainer/Tempo")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -243.0
+offset_top = -172.0
+offset_right = 251.0
+offset_bottom = 177.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 18
+
+[node name="Fim de jogo" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_s2eql")
+theme_override_font_sizes/font_size = 86
+text = "GAME OVER"
+
+[node name="Tempo" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_s2eql")
+theme_override_font_sizes/font_size = 35
+
+[node name="Botões" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Recomeçar" type="Button" parent="VBoxContainer/Botões"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_s2eql")
+theme_override_font_sizes/font_size = 43
+text = "RECOMEÇAR"
+flat = true
+
+[node name="Sair" type="Button" parent="VBoxContainer/Botões"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_s2eql")
+theme_override_font_sizes/font_size = 43
+text = "SAIR"
+flat = true
+
+[connection signal="pressed" from="VBoxContainer/Botões/Recomeçar" to="." method="_on_recomeçar_pressed"]
+[connection signal="pressed" from="VBoxContainer/Botões/Sair" to="." method="_on_sair_pressed"]

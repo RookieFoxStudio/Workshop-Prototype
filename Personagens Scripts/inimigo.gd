@@ -84,5 +84,5 @@ func _on_hunt_range_body_exited(body: Node2D) -> void:
 
 func _on_kill_range_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
-		body.gravity = 0
-		body.global_position.y = 1000000000000
+		body.health = false
+	
