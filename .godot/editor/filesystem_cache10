@@ -1,24 +1,24 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1758603678
-icon.svg::CompressedTexture2D::8298408138784963284::1757049401::1758505985::1::::<><><>0<>0<>be283d429225a1f9536fd69a322ef634<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main.gd::GDScript::7572292895363426667::1758603336::0::1::::<>Node2D<><>0<>0<><>::
-Main.tscn::PackedScene::3101147562308154412::1758601673::0::1::::<><><>0<>0<><>::uid://gp4ksdo08kh::::res://Personagens Cenas/Player.tscn<>uid://df5cs7wkg2knr::::res://main.gd<>uid://br0vd7lommcxh::::res://Personagens Cenas/Inimigo.tscn
-tela_fim.gd::GDScript::7801653478288613023::1758603372::0::1::::<>Control<><>0<>0<><>::
-tela_fim.tscn::PackedScene::1104040818364874275::1758603459::0::1::::<><><>0<>0<><>::uid://djfgdfpmsh5eh::::res://tela_fim.gd<>uid://b1cqxulqdl5jr::::res://Engagement/Engagement-Regular.ttf
-tela_inicio.gd::GDScript::3464009034037800609::1758556682::0::1::::<>Control<><>0<>0<><>::
-tela_início.tscn::PackedScene::1449209670217081002::1758602934::0::1::::<><><>0<>0<><>::uid://bpl8ytoycm6qf::::res://tela_inicio.gd<>uid://cwfot612jdg5d::::res://Assets/Tela inicio - workshop(base).jpg<>uid://b1cqxulqdl5jr::::res://Engagement/Engagement-Regular.ttf
-::res://Assets/::1758553994
-Tela inicio - workshop(base).jpg::CompressedTexture2D::6328203453803815583::1758553958::1758553994::1::::<><><>0<>0<>611ef5bf2d97edc30bb678e3e8626f1b<>res://.godot/imported/Tela inicio - workshop(base).jpg-4f8303de04c43ddbe0246e488bc39960.ctex::
-::res://Fontes/::1758603529
-::res://Fontes/Engagement/::1758603529
-Engagement-Regular.ttf::FontFile::4026655802300567557::1758603526::1758603678::1::::<><><>0<>0<>0bd24af74288bf475e414a8e188050aa<>res://.godot/imported/Engagement-Regular.ttf-f1c9d582539d942c7b90398a03730062.fontdata::
-OFL.txt::TextFile::-1::1758603526::0::1::::<><><>0<>0<><>::
-::res://Fontes/Quintessential/::1758603529
-OFL.txt::TextFile::-1::1758603526::0::1::::<><><>0<>0<><>::
-Quintessential-Regular.ttf::FontFile::8579976501108299757::1758603526::1758603678::1::::<><><>0<>0<>7ef1c0cc377c4a7ce32c5a00f725d923<>res://.godot/imported/Quintessential-Regular.ttf-e04543016a6eeb9e003c0f2f281d2909.fontdata::
-::res://Personagens Cenas/::1758600712
-Inimigo.tscn::PackedScene::3632522582013616317::1758600315::0::1::::<><><>0<>0<><>::uid://cfm0o6pub67r1::::res://Personagens Scripts/inimigo.gd<>uid://dqh2tmq4lldxs::::res://icon.svg
-Player.tscn::PackedScene::13349362635114599::1758600712::0::1::::<><><>0<>0<><>::uid://li6fyeqx858c::::res://Personagens Scripts/player.gd<>uid://dqh2tmq4lldxs::::res://icon.svg
-::res://Personagens Scripts/::1758603095
-inimigo.gd::GDScript::5150102696866133028::1758600695::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.gd::GDScript::790484725294775764::1758603095::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://::1758637575
+icon.svg::CompressedTexture2D::8298408138784963284::1758637469::1758637576::1::::<><><>0<>0<>be283d429225a1f9536fd69a322ef634<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main.gd::GDScript::7572292895363426667::1758637469::0::1::::<>Node2D<><>0<>0<><>::
+Main.tscn::PackedScene::3101147562308154412::1758637469::0::1::::<><><>0<>0<><>::uid://gp4ksdo08kh::::res://Personagens Cenas/Player.tscn<>uid://df5cs7wkg2knr::::res://main.gd<>uid://br0vd7lommcxh::::res://Personagens Cenas/Inimigo.tscn
+tela_fim.gd::GDScript::7801653478288613023::1758637469::0::1::::<>Control<><>0<>0<><>::
+tela_fim.tscn::PackedScene::1104040818364874275::1758637469::0::1::::<><><>0<>0<><>::uid://djfgdfpmsh5eh::::res://tela_fim.gd<>uid://duig7vdfq0g2x::::res://Fontes/Quintessential/Quintessential-Regular.ttf
+tela_inicio.gd::GDScript::3464009034037800609::1758637469::0::1::::<>Control<><>0<>0<><>::
+tela_início.tscn::PackedScene::1449209670217081002::1758637469::0::1::::<><><>0<>0<><>::uid://bpl8ytoycm6qf::::res://tela_inicio.gd<>uid://cwfot612jdg5d::::res://Assets/Tela inicio - workshop(base).jpg<>uid://bxmsoyjjugm5j::::res://Fontes/Engagement/Engagement-Regular.ttf<>uid://duig7vdfq0g2x::::res://Fontes/Quintessential/Quintessential-Regular.ttf
+::res://Assets/::1758637521
+Tela inicio - workshop(base).jpg::CompressedTexture2D::6328203453803815583::1758637469::1758637576::1::::<><><>0<>0<>611ef5bf2d97edc30bb678e3e8626f1b<>res://.godot/imported/Tela inicio - workshop(base).jpg-4f8303de04c43ddbe0246e488bc39960.ctex::
+::res://Fontes/::1758637273
+::res://Fontes/Engagement/::1758637521
+Engagement-Regular.ttf::FontFile::4026655802300567557::1758637469::1758637576::1::::<><><>0<>0<>0bd24af74288bf475e414a8e188050aa<>res://.godot/imported/Engagement-Regular.ttf-f1c9d582539d942c7b90398a03730062.fontdata::
+OFL.txt::TextFile::-1::1758637469::0::1::::<><><>0<>0<><>::
+::res://Fontes/Quintessential/::1758637521
+OFL.txt::TextFile::-1::1758637469::0::1::::<><><>0<>0<><>::
+Quintessential-Regular.ttf::FontFile::8579976501108299757::1758637469::1758637576::1::::<><><>0<>0<>7ef1c0cc377c4a7ce32c5a00f725d923<>res://.godot/imported/Quintessential-Regular.ttf-e04543016a6eeb9e003c0f2f281d2909.fontdata::
+::res://Personagens Cenas/::1758637521
+Inimigo.tscn::PackedScene::3632522582013616317::1758637469::0::1::::<><><>0<>0<><>::uid://cfm0o6pub67r1::::res://Personagens Scripts/inimigo.gd<>uid://cwfot612jdg5d::::res://Assets/Tela inicio - workshop(base).jpg
+Player.tscn::PackedScene::13349362635114599::1758637469::0::1::::<><><>0<>0<><>::uid://li6fyeqx858c::::res://Personagens Scripts/player.gd<>uid://dqh2tmq4lldxs::::res://icon.svg
+::res://Personagens Scripts/::1758637521
+inimigo.gd::GDScript::5150102696866133028::1758637469::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.gd::GDScript::790484725294775764::1758637469::0::1::::<>CharacterBody2D<><>0<>0<><>::

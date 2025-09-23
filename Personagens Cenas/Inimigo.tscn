@@ -17,8 +17,8 @@ height = 143.0
 script = ExtResource("1_g1ieq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-1.0000038, 1)
-scale = Vector2(0.077850275, 0.13836521)
+position = Vector2(-1.0000038, -0.8430562)
+scale = Vector2(0.07982042, 0.14187345)
 texture = ExtResource("2_g1ieq")
 
 [node name="DefaultColision" type="CollisionShape2D" parent="."]
@@ -39,6 +39,14 @@ debug_color = Color(0.99478465, 0.06870298, 3.85046e-07, 0.41960785)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_g1ieq")
 debug_color = Color(0.88365537, 0.00032863676, 0.8143432, 0.41960785)
+
+[node name="GroundVerify" type="Node2D" parent="."]
+
+[node name="RayCastLeft" type="RayCast2D" parent="GroundVerify"]
+position = Vector2(-64, 41)
+
+[node name="RayCastRight" type="RayCast2D" parent="GroundVerify"]
+position = Vector2(65, 40)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="HuntRange" to="." method="_on_hunt_range_body_entered"]

@@ -14,6 +14,9 @@ var direction: Vector2
 var state = State.MOVING_RIGHT
 var start_position:float
 
+@onready var RayLeft = $GroundVerify/RayCastLeft
+@onready var RayRight = $GroundVerify/RayCastRight
+
 func _ready() -> void:
 	start_position = global_position.x
 
@@ -36,11 +39,17 @@ func StateMachine(delta):
 			if global_position.x >= start_position + right_limit:
 				state = State.RESTING_RIGHT
 				$Timer.start(2)
+			elif !RayRight.is_colliding():
+				state = State.RESTING_RIGHT
+				$Timer.start(2)
 		State.RESTING_RIGHT:
 			direction.x = move_toward(direction.x, 0, friction * delta)
 		State.MOVING_LEFT:
 			direction.x = move_toward(direction.x, -speed, acceleration * delta)
 			if global_position.x <= start_position + left_limit:
+				state = State.RESTING_LEFT
+				$Timer.start(2)
+			elif !RayLeft.is_colliding():
 				state = State.RESTING_LEFT
 				$Timer.start(2)
 		State.RESTING_LEFT:
@@ -53,8 +62,7 @@ func StateMachine(delta):
 				direction.x = move_toward(direction.x, -(speed + 100), acceleration * delta)
 		State.RESTING_HUNTING:
 			direction.x = move_toward(direction.x, 0, friction * delta)
-
-
+			
 func _on_timer_timeout() -> void:
 	if state == State.RESTING_RIGHT:
 		state = State.MOVING_LEFT
