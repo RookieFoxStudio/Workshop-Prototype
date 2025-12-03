@@ -21,7 +21,7 @@ position = Vector2(62, 476)
 player = NodePath("../Player")
 
 [node name="Player" parent="." instance=ExtResource("1_glv2v")]
-position = Vector2(697, 102)
+position = Vector2(753, -129)
 metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
