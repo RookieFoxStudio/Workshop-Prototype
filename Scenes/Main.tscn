@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bkghphbogbuk7"]
 
-[ext_resource type="PackedScene" uid="uid://gp4ksdo08kh" path="res://Personagens Cenas/Player.tscn" id="1_glv2v"]
-[ext_resource type="Script" uid="uid://df5cs7wkg2knr" path="res://main.gd" id="1_r0du0"]
-[ext_resource type="PackedScene" uid="uid://br0vd7lommcxh" path="res://Personagens Cenas/Inimigo.tscn" id="1_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://gp4ksdo08kh" path="res://Personagens/Personagens Cenas/Player.tscn" id="1_glv2v"]
+[ext_resource type="Script" uid="uid://df5cs7wkg2knr" path="res://Scenes/Scenes_codes/main.gd" id="1_r0du0"]
+[ext_resource type="PackedScene" uid="uid://br0vd7lommcxh" path="res://Personagens/Personagens Cenas/Inimigo.tscn" id="1_uu6xs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_glv2v"]
 size = Vector2(1413.5625, 135)

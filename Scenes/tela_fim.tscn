@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://py2nj76okc1x"]
 
-[ext_resource type="Script" uid="uid://djfgdfpmsh5eh" path="res://tela_fim.gd" id="1_s2eql"]
+[ext_resource type="Script" uid="uid://djfgdfpmsh5eh" path="res://Scenes/Scenes_codes/tela_fim.gd" id="1_s2eql"]
 [ext_resource type="FontFile" uid="uid://duig7vdfq0g2x" path="res://Fontes/Quintessential/Quintessential-Regular.ttf" id="2_s2eql"]
 
 [node name="Game Over" type="Control" node_paths=PackedStringArray("time")]

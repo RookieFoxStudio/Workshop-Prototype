@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://br0vd7lommcxh"]
 
-[ext_resource type="Script" uid="uid://cfm0o6pub67r1" path="res://Personagens Scripts/inimigo.gd" id="1_g1ieq"]
+[ext_resource type="Script" uid="uid://cfm0o6pub67r1" path="res://Personagens/Personagens Scripts/inimigo.gd" id="1_g1ieq"]
 [ext_resource type="Texture2D" uid="uid://cwfot612jdg5d" path="res://Assets/Tela inicio - workshop(base).jpg" id="2_g1ieq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g1ieq"]
