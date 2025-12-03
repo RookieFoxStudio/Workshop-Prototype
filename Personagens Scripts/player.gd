@@ -58,6 +58,5 @@ func movement(delta):
 
 func death():
 	var collision = $CollisionShape2D
-	
 	self.visible = false
 	collision.disabled = true
