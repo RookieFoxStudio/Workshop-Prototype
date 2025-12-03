@@ -1,3 +1,6 @@
+Camera2D
+Sprite2D
+Parallax2D
 Node2D
 RayCast2D
 Area2D
@@ -9,6 +12,3 @@ TextureRect
 ColorRect
 AudioStreamPlayer2D
 AnimationPlayer
-HBoxContainer
-CollisionShape2D
-Timer

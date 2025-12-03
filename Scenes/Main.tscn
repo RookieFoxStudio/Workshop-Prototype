@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bkghphbogbuk7"]
+[gd_scene load_steps=6 format=3 uid="uid://bkghphbogbuk7"]
 
 [ext_resource type="PackedScene" uid="uid://gp4ksdo08kh" path="res://Personagens/Personagens Cenas/Player.tscn" id="1_glv2v"]
 [ext_resource type="Script" uid="uid://df5cs7wkg2knr" path="res://Scenes/Scenes_codes/main.gd" id="1_r0du0"]
 [ext_resource type="PackedScene" uid="uid://br0vd7lommcxh" path="res://Personagens/Personagens Cenas/Inimigo.tscn" id="1_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://b3ing3c5v6vii" path="res://Scenes/paralax_background.tscn" id="4_rgh2o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_glv2v"]
 size = Vector2(1413.5625, 135)
@@ -11,15 +12,26 @@ size = Vector2(1413.5625, 135)
 script = ExtResource("1_r0du0")
 player = NodePath("Player")
 
+[node name="Paralax_Background" parent="." instance=ExtResource("4_rgh2o")]
+position = Vector2(0, 320.865)
+scale = Vector2(1.8, 1.8)
+
 [node name="Inimigo" parent="." node_paths=PackedStringArray("player") instance=ExtResource("1_uu6xs")]
 position = Vector2(62, 476)
 player = NodePath("../Player")
 
 [node name="Player" parent="." instance=ExtResource("1_glv2v")]
-position = Vector2(842, 137)
+position = Vector2(697, 102)
+metadata/_edit_group_ = true
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2(0, -104.14)
+zoom = Vector2(1.5, 1.5)
+limit_top = 105
+limit_bottom = 748
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(690.21875, 659.5)
+position = Vector2(656, 622)
 shape = SubResource("RectangleShape2D_glv2v")

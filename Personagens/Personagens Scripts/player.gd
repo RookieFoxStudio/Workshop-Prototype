@@ -15,6 +15,8 @@ var jump_cut : float = 0.5  ##fator que "corta" a velocidade do pulo quando o bo
 var health : bool = true	
 #-------------------------------------------
 
+@onready var cam = $Camera2D
+
 func _ready() -> void:
 	add_to_group("Player")
 
@@ -58,5 +60,6 @@ func movement(delta):
 
 func death():
 	var collision = $CollisionShape2D
+	cam.enabled = false
 	self.visible = false
 	collision.disabled = true

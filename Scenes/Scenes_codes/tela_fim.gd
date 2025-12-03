@@ -11,7 +11,7 @@ func tempo_final(time_seconds : float):
 
 
 func _on_recomeçar_pressed() -> void:
-	get_tree().change_scene_to_file("res://tela_início.tscn")
+	get_tree().change_scene_to_file("res://Scenes/tela_início.tscn")
 	queue_free()
 
 func _on_sair_pressed() -> void:

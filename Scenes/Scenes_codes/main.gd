@@ -2,7 +2,7 @@ extends Node2D
 
 @export var player : CharacterBody2D
 var time_played : float = 0.0
-var end_screen = load("res://tela_fim.tscn").instantiate()
+var end_screen = load("res://Scenes/tela_fim.tscn").instantiate()
 
 
 func _process(delta: float):

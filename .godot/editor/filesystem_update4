@@ -7,3 +7,8 @@ res://Scenes/tela_início.tscn
 res://Personagens Cenas/Player.tscn
 res://Personagens Cenas/Inimigo.tscn
 res://Personagens/Personagens Cenas/Player.tscn
+res://Scenes/paralax_background.tscn
+res://Scenes/Scenes_codes/tela_inicio.gd
+res://Scenes/Scenes_codes/main.gd
+res://Personagens/Personagens Scripts/player.gd
+res://Scenes/Scenes_codes/tela_fim.gd
