@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bkghphbogbuk7"]
+[gd_scene format=3 uid="uid://bkghphbogbuk7"]
 
 [ext_resource type="PackedScene" uid="uid://gp4ksdo08kh" path="res://Personagens/Personagens Cenas/Player.tscn" id="1_glv2v"]
 [ext_resource type="Script" uid="uid://df5cs7wkg2knr" path="res://Scenes/Scenes_codes/main.gd" id="1_r0du0"]
@@ -8,30 +8,30 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_glv2v"]
 size = Vector2(1413.5625, 135)
 
-[node name="Main" type="Node2D" node_paths=PackedStringArray("player")]
+[node name="Main" type="Node2D" unique_id=985451543 node_paths=PackedStringArray("player")]
 script = ExtResource("1_r0du0")
 player = NodePath("Player")
 
-[node name="Paralax_Background" parent="." instance=ExtResource("4_rgh2o")]
+[node name="Paralax_Background" parent="." unique_id=1254190245 instance=ExtResource("4_rgh2o")]
 position = Vector2(0, 320.865)
 scale = Vector2(1.8, 1.8)
 
-[node name="Inimigo" parent="." node_paths=PackedStringArray("player") instance=ExtResource("1_uu6xs")]
+[node name="Inimigo" parent="." unique_id=1912724585 node_paths=PackedStringArray("player") instance=ExtResource("1_uu6xs")]
 position = Vector2(62, 476)
 player = NodePath("../Player")
 
-[node name="Player" parent="." instance=ExtResource("1_glv2v")]
+[node name="Player" parent="." unique_id=786342945 instance=ExtResource("1_glv2v")]
 position = Vector2(753, -129)
 metadata/_edit_group_ = true
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1700585704]
 offset = Vector2(0, -104.14)
 zoom = Vector2(1.5, 1.5)
 limit_top = 105
 limit_bottom = 748
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2096171353]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1772176014]
 position = Vector2(656, 622)
 shape = SubResource("RectangleShape2D_glv2v")
