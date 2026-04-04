@@ -33,7 +33,7 @@ func Gravidade(delta):
 func StateMachine(delta):
 	match state:
 		State.MOVING_RIGHT:
-			velocity.x = move_toward(direction.x, speed, acceleration * delta)
+			velocity.x = move_toward(velocity.x, speed, acceleration * delta)
 			if global_position.x >= start_position + right_limit:
 				state = State.RESTING_RIGHT
 				$Timer.start(2)
