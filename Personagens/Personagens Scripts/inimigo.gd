@@ -9,7 +9,6 @@ enum State {MOVING_RIGHT, RESTING_RIGHT, MOVING_LEFT, RESTING_LEFT, HUNTING, RES
 @export var acceleration:float = 650
 @export var left_limit:float = -100
 @export var right_limit:float = 100
-var direction: Vector2
 
 var state = State.MOVING_RIGHT
 var start_position:float
@@ -23,19 +22,18 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	Gravidade(delta)
 	StateMachine(delta)
-	velocity = direction
 	move_and_slide()
 
 func Gravidade(delta):
 	if not is_on_floor():
-		direction.y += gravidade * delta
+		velocity.y += gravidade * delta
 	else: 
-		direction.y = 0
+		velocity.y = 0
 
 func StateMachine(delta):
 	match state:
 		State.MOVING_RIGHT:
-			direction.x = move_toward(direction.x, speed, acceleration * delta)
+			velocity.x = move_toward(direction.x, speed, acceleration * delta)
 			if global_position.x >= start_position + right_limit:
 				state = State.RESTING_RIGHT
 				$Timer.start(2)
@@ -43,9 +41,9 @@ func StateMachine(delta):
 				state = State.RESTING_RIGHT
 				$Timer.start(2)
 		State.RESTING_RIGHT:
-			direction.x = move_toward(direction.x, 0, friction * delta)
+			velocity.x = move_toward(velocity.x, 0, friction * delta)
 		State.MOVING_LEFT:
-			direction.x = move_toward(direction.x, -speed, acceleration * delta)
+			velocity.x = move_toward(velocity.x, -speed, acceleration * delta)
 			if global_position.x <= start_position + left_limit:
 				state = State.RESTING_LEFT
 				$Timer.start(2)
@@ -53,15 +51,15 @@ func StateMachine(delta):
 				state = State.RESTING_LEFT
 				$Timer.start(2)
 		State.RESTING_LEFT:
-			direction.x = move_toward(direction.x, 0, friction * delta)
+			velocity.x = move_toward(velocity.x, 0, friction * delta)
 		State.HUNTING:
 			var hunt_direction: float = player.global_position.x - global_position.x
 			if hunt_direction > 0:
-				direction.x = move_toward(direction.x, speed + 100, acceleration * delta)
+				velocity.x = move_toward(velocity.x, speed + 100, acceleration * delta)
 			else:
-				direction.x = move_toward(direction.x, -(speed + 100), acceleration * delta)
+				velocity.x = move_toward(velocity.x, -(speed + 100), acceleration * delta)
 		State.RESTING_HUNTING:
-			direction.x = move_toward(direction.x, 0, friction * delta)
+			velocity.x = move_toward(velocity.x, 0, friction * delta)
 			
 func _on_timer_timeout() -> void:
 	if state == State.RESTING_RIGHT:

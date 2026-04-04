@@ -26,7 +26,6 @@ metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1700585704]
 offset = Vector2(0, -104.14)
-zoom = Vector2(1.5, 1.5)
 limit_top = 105
 limit_bottom = 748
 
@@ -34,4 +33,5 @@ limit_bottom = 748
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1772176014]
 position = Vector2(656, 622)
+scale = Vector2(100, 1)
 shape = SubResource("RectangleShape2D_glv2v")

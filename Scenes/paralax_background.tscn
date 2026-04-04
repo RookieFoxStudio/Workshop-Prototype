@@ -1,41 +1,40 @@
-[gd_scene load_steps=5 format=3 uid="uid://b3ing3c5v6vii"]
+[gd_scene format=3 uid="uid://b3ing3c5v6vii"]
 
 [ext_resource type="Texture2D" uid="uid://dfx7giok47tas" path="res://Assets/Paralax_BG_Layers/layer4.png" id="1_gui8k"]
 [ext_resource type="Texture2D" uid="uid://55lie6h5cl1s" path="res://Assets/Paralax_BG_Layers/layer3.png" id="2_0tp5l"]
 [ext_resource type="Texture2D" uid="uid://bfpfjs0teeirg" path="res://Assets/Paralax_BG_Layers/layer2.png" id="3_h76mt"]
 [ext_resource type="Texture2D" uid="uid://bc4ft3id5rx8a" path="res://Assets/Paralax_BG_Layers/layer1.png" id="4_us12y"]
 
-[node name="Paralax_Background" type="Node2D"]
+[node name="Paralax_Background" type="Node2D" unique_id=1684508494]
 scale = Vector2(2, 2)
 
-[node name="Parallax2D" type="Parallax2D" parent="."]
-scroll_scale = Vector2(0.9, 1)
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=899057158]
+scroll_scale = Vector2(0.5, 0.5)
 repeat_size = Vector2(640, 0)
-repeat_times = 10
+repeat_times = 100
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=467474811]
 texture = ExtResource("1_gui8k")
 
-[node name="Parallax2D2" type="Parallax2D" parent="."]
-scroll_scale = Vector2(0.8, 0.7)
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=2141395049]
+scroll_scale = Vector2(0.7, 0.7)
 repeat_size = Vector2(640, 0)
-repeat_times = 10
+repeat_times = 100
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2" unique_id=1900368904]
 texture = ExtResource("2_0tp5l")
 
-[node name="Parallax2D3" type="Parallax2D" parent="."]
-scroll_scale = Vector2(0.7, 0.8)
+[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=590981319]
+scroll_scale = Vector2(0.8, 0.8)
 repeat_size = Vector2(640, 0)
-repeat_times = 10
+repeat_times = 100
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3" unique_id=974572453]
 texture = ExtResource("3_h76mt")
 
-[node name="Parallax2D4" type="Parallax2D" parent="."]
-scroll_scale = Vector2(0.6, 1)
+[node name="Parallax2D4" type="Parallax2D" parent="." unique_id=1707065357]
 repeat_size = Vector2(640, 0)
-repeat_times = 10
+repeat_times = 100
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4" unique_id=620504212]
 texture = ExtResource("4_us12y")

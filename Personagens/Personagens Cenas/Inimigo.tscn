@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://br0vd7lommcxh"]
+[gd_scene format=3 uid="uid://br0vd7lommcxh"]
 
 [ext_resource type="Script" uid="uid://cfm0o6pub67r1" path="res://Personagens/Personagens Scripts/inimigo.gd" id="1_g1ieq"]
 [ext_resource type="Texture2D" uid="uid://cwfot612jdg5d" path="res://Assets/Tela inicio - workshop(base).jpg" id="2_g1ieq"]
@@ -13,39 +13,39 @@ size = Vector2(710, 251)
 radius = 58.0
 height = 143.0
 
-[node name="Inimigo" type="CharacterBody2D"]
+[node name="Inimigo" type="CharacterBody2D" unique_id=1401524260]
 script = ExtResource("1_g1ieq")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1139995941]
 position = Vector2(-1.0000038, -0.8430562)
 scale = Vector2(0.07982042, 0.14187345)
 texture = ExtResource("2_g1ieq")
 
-[node name="DefaultColision" type="CollisionShape2D" parent="."]
+[node name="DefaultColision" type="CollisionShape2D" parent="." unique_id=1911767341]
 shape = SubResource("RectangleShape2D_g1ieq")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=1266849789]
 
-[node name="HuntRange" type="Area2D" parent="."]
+[node name="HuntRange" type="Area2D" parent="." unique_id=283536030]
 
-[node name="HuntColision" type="CollisionShape2D" parent="HuntRange"]
+[node name="HuntColision" type="CollisionShape2D" parent="HuntRange" unique_id=951220050]
 position = Vector2(-1, -61)
 shape = SubResource("RectangleShape2D_4328v")
 debug_color = Color(0.99478465, 0.06870298, 3.85046e-07, 0.41960785)
 
-[node name="KillRange" type="Area2D" parent="."]
+[node name="KillRange" type="Area2D" parent="." unique_id=71970767]
 
-[node name="KillColision" type="CollisionShape2D" parent="KillRange"]
+[node name="KillColision" type="CollisionShape2D" parent="KillRange" unique_id=309348796]
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_g1ieq")
 debug_color = Color(0.88365537, 0.00032863676, 0.8143432, 0.41960785)
 
-[node name="GroundVerify" type="Node2D" parent="."]
+[node name="GroundVerify" type="Node2D" parent="." unique_id=1231952240]
 
-[node name="RayCastLeft" type="RayCast2D" parent="GroundVerify"]
+[node name="RayCastLeft" type="RayCast2D" parent="GroundVerify" unique_id=1554522926]
 position = Vector2(-64, 41)
 
-[node name="RayCastRight" type="RayCast2D" parent="GroundVerify"]
+[node name="RayCastRight" type="RayCast2D" parent="GroundVerify" unique_id=1984619777]
 position = Vector2(65, 40)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

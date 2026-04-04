@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769570475
+::res://::1775318794
 icon.svg::CompressedTexture2D::8298408138784963284::1758637469::1758637576::1::::<><><>0<>0<>be283d429225a1f9536fd69a322ef634<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Assets/::1764737236
 Tela inicio - workshop(base).jpg::CompressedTexture2D::6328203453803815583::1758637469::1758637576::1::::<><><>0<>0<>611ef5bf2d97edc30bb678e3e8626f1b<>res://.godot/imported/Tela inicio - workshop(base).jpg-4f8303de04c43ddbe0246e488bc39960.ctex::
@@ -25,8 +25,8 @@ Player.tscn::PackedScene::13349362635114599::1764730800::0::1::::<><><>0<>0<><>:
 ::res://Personagens/Personagens Scripts/::1764728667
 inimigo.gd::GDScript::5150102696866133028::1758638968::0::1::::<>CharacterBody2D<><>0<>0<><>::
 player.gd::GDScript::790484725294775764::1764728667::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Scenes/::1764737329
-Main.tscn::PackedScene::3101147562308154412::1764737329::0::1::::<><><>0<>0<><>::uid://gp4ksdo08kh::::res://Personagens/Personagens Cenas/Player.tscn<>uid://df5cs7wkg2knr::::res://Scenes/Scenes_codes/main.gd<>uid://br0vd7lommcxh::::res://Personagens/Personagens Cenas/Inimigo.tscn<>uid://b3ing3c5v6vii::::res://Scenes/paralax_background.tscn
+::res://Scenes/::1769570542
+Main.tscn::PackedScene::3101147562308154412::1769570542::0::1::::<><><>0<>0<><>::uid://gp4ksdo08kh::::res://Personagens/Personagens Cenas/Player.tscn<>uid://df5cs7wkg2knr::::res://Scenes/Scenes_codes/main.gd<>uid://br0vd7lommcxh::::res://Personagens/Personagens Cenas/Inimigo.tscn<>uid://b3ing3c5v6vii::::res://Scenes/paralax_background.tscn
 paralax_background.tscn::PackedScene::4369024838395661044::1764731716::0::1::::<><><>0<>0<><>::uid://dfx7giok47tas::::res://Assets/Paralax_BG_Layers/layer4.png<>uid://55lie6h5cl1s::::res://Assets/Paralax_BG_Layers/layer3.png<>uid://bfpfjs0teeirg::::res://Assets/Paralax_BG_Layers/layer2.png<>uid://bc4ft3id5rx8a::::res://Assets/Paralax_BG_Layers/layer1.png
 tela_fim.tscn::PackedScene::1104040818364874275::1764729335::0::1::::<><><>0<>0<><>::uid://djfgdfpmsh5eh::::res://Scenes/Scenes_codes/tela_fim.gd<>uid://duig7vdfq0g2x::::res://Fontes/Quintessential/Quintessential-Regular.ttf
 tela_início.tscn::PackedScene::1449209670217081002::1764728590::0::1::::<><><>0<>0<><>::uid://bpl8ytoycm6qf::::res://Scenes/Scenes_codes/tela_inicio.gd<>uid://cwfot612jdg5d::::res://Assets/Tela inicio - workshop(base).jpg<>uid://bxmsoyjjugm5j::::res://Fontes/Engagement/Engagement-Regular.ttf<>uid://duig7vdfq0g2x::::res://Fontes/Quintessential/Quintessential-Regular.ttf
