@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cycu2o0fo1jh7"]
+
+[ext_resource type="Script" uid="uid://qd2l8xai8kop" path="res://moeda.gd" id="1_7xn1b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1j4wf"]
+radius = 31.016125
+
+[node name="moeda" type="Area2D" unique_id=1790389884]
+script = ExtResource("1_7xn1b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1203031534]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=775888676]
+shape = SubResource("CircleShape2D_1j4wf")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=267395377]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

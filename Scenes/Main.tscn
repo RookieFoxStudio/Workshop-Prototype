@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://df5cs7wkg2knr" path="res://Scenes/Scenes_codes/main.gd" id="1_r0du0"]
 [ext_resource type="PackedScene" uid="uid://br0vd7lommcxh" path="res://Personagens/Personagens Cenas/Inimigo.tscn" id="1_uu6xs"]
 [ext_resource type="PackedScene" uid="uid://b3ing3c5v6vii" path="res://Scenes/paralax_background.tscn" id="4_rgh2o"]
+[ext_resource type="PackedScene" uid="uid://cycu2o0fo1jh7" path="res://moeda.tscn" id="5_pbw6q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_glv2v"]
 size = Vector2(1413.5625, 135)
@@ -35,3 +36,6 @@ limit_bottom = 748
 position = Vector2(656, 622)
 scale = Vector2(100, 1)
 shape = SubResource("RectangleShape2D_glv2v")
+
+[node name="moeda" parent="." unique_id=1790389884 instance=ExtResource("5_pbw6q")]
+position = Vector2(1086, 461)

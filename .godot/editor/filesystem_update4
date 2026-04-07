@@ -1,5 +1,5 @@
+res://moeda.tscn
+res://moeda.gd
 res://Scenes/Main.tscn
-res://Scenes/paralax_background.tscn
-res://Personagens/Personagens Cenas/Inimigo.tscn
-res://Personagens/Personagens Scripts/inimigo.gd
-res://Scenes/tela_fim.tscn
+res://Personagens/Personagens Cenas/Player.tscn
+res://Personagens/Personagens Scripts/player.gd
