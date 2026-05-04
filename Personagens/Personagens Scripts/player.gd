@@ -12,7 +12,7 @@ var jump_cut : float = 0.5  ##fator que "corta" a velocidade do pulo quando o bo
 @export var gravity : float = 900  ##define o valor da gravidade (valor positivo no eixo y significa que vai para baixo)
 ##Delta = 1/Frame Rate(Hz)
 
-var health : bool = true	
+var health : bool = true
 #-------------------------------------------
 
 @onready var cam = $Camera2D
