@@ -1,19 +1,85 @@
-[gd_scene load_steps=4 format=3 uid="uid://gp4ksdo08kh"]
+[gd_scene format=3 uid="uid://gp4ksdo08kh"]
 
 [ext_resource type="Script" uid="uid://li6fyeqx858c" path="res://Personagens/Personagens Scripts/player.gd" id="1_kpjcp"]
-[ext_resource type="Texture2D" uid="uid://dqh2tmq4lldxs" path="res://icon.svg" id="1_xhfnw"]
+[ext_resource type="Texture2D" uid="uid://ccnjh8kk35cfq" path="res://Assets/SHAM_ANIM/death/Sham_death2.png" id="2_4ymbh"]
+[ext_resource type="Texture2D" uid="uid://c285txea16udk" path="res://Assets/SHAM_ANIM/idle/Sham_idle1.png" id="2_yyvbv"]
+[ext_resource type="Texture2D" uid="uid://c777ypmycfses" path="res://Assets/SHAM_ANIM/idle/Sham_idle2.png" id="3_560vg"]
+[ext_resource type="Texture2D" uid="uid://be0u3gd7lus6y" path="res://Assets/SHAM_ANIM/death/Sham_death3.png" id="3_rxigv"]
+[ext_resource type="Texture2D" uid="uid://dwcqa6pk2s3ih" path="res://Assets/SHAM_ANIM/death/Sham_death4.png" id="4_40qji"]
+[ext_resource type="Texture2D" uid="uid://dhm7nrl10oktp" path="res://Assets/SHAM_ANIM/idle/Sham_idle3.png" id="4_p8d8g"]
+[ext_resource type="Texture2D" uid="uid://bhf15aq8y76gt" path="res://Assets/SHAM_ANIM/idle/Sham_idle4.png" id="5_4ymbh"]
+[ext_resource type="Texture2D" uid="uid://b55erw8dususq" path="res://Assets/SHAM_ANIM/Jump/Sham_jump2.png" id="9_rxigv"]
+[ext_resource type="Texture2D" uid="uid://dxm8bdnpcjq7j" path="res://Assets/SHAM_ANIM/Run/Sham_run1.png" id="10_nvp5n"]
+[ext_resource type="Texture2D" uid="uid://dxfqjgrbchgey" path="res://Assets/SHAM_ANIM/Run/Sham_run2.png" id="11_8en60"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rxigv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4ymbh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rxigv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_40qji")
+}],
+"loop": false,
+"name": &"DEATH",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_yyvbv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_560vg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_p8d8g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4ymbh")
+}],
+"loop": true,
+"name": &"IDLE",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_rxigv")
+}],
+"loop": false,
+"name": &"JUMP",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_nvp5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8en60")
+}],
+"loop": true,
+"name": &"RUN",
+"speed": 10.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xhfnw"]
-size = Vector2(129, 129)
+size = Vector2(16, 58)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" unique_id=1782658992]
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_kpjcp")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_xhfnw")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=424121327]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_rxigv")
+animation = &"RUN"
+autoplay = "IDLE"
+frame_progress = 0.93881434
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 0.5)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1341058759]
+position = Vector2(2, 13)
 shape = SubResource("RectangleShape2D_xhfnw")
 debug_color = Color(0, 0.600278, 0.698395, 0.42)
