@@ -9,12 +9,16 @@ radius = 33.0
 [sub_resource type="Animation" id="Animation_rm4i6"]
 resource_name = "Coletado"
 
+[sub_resource type="Animation" id="Animation_c01gq"]
+resource_name = "Coletado_Ponto"
+
 [sub_resource type="Animation" id="Animation_6g8gu"]
 resource_name = "Parado"
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_c01gq"]
 _data = {
 &"Coletado": SubResource("Animation_rm4i6"),
+&"Coletado_Ponto": SubResource("Animation_c01gq"),
 &"Parado": SubResource("Animation_6g8gu")
 }
 

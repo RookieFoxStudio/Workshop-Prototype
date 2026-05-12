@@ -43,6 +43,9 @@ theme_override_fonts/font = ExtResource("2_s2eql")
 theme_override_font_sizes/font_size = 86
 text = "GAME OVER"
 
+[node name="Moedas" type="Label" parent="VBoxContainer" unique_id=1329685790]
+layout_mode = 2
+
 [node name="Tempo" type="Label" parent="VBoxContainer" unique_id=1918450225]
 layout_mode = 2
 size_flags_horizontal = 4

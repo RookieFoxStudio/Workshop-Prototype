@@ -1,6 +1,13 @@
 extends Control
 
 @export var time : Label
+@onready var moedas : Label = $VBoxContainer/Moedas
+@onready var player : CharacterBody2D = $Player
+
+var inventario : int = player.inventory
+
+func _ready() -> void:
+	pass
 
 func tempo_final(time_seconds : float):
 	var total_seconds = floori(time_seconds)

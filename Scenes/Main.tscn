@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://br0vd7lommcxh" path="res://Personagens/Personagens Cenas/Inimigo.tscn" id="1_uu6xs"]
 [ext_resource type="PackedScene" uid="uid://b3ing3c5v6vii" path="res://Scenes/paralax_background.tscn" id="4_rgh2o"]
 [ext_resource type="PackedScene" uid="uid://cycu2o0fo1jh7" path="res://Coletáveis/moeda.tscn" id="5_pbw6q"]
+[ext_resource type="PackedScene" uid="uid://cre4bx8rg0oox" path="res://pote.tscn" id="6_v1gob"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_glv2v"]
 size = Vector2(1413.5625, 135)
@@ -39,3 +40,9 @@ shape = SubResource("RectangleShape2D_glv2v")
 
 [node name="Moeda" parent="." unique_id=713275566 instance=ExtResource("5_pbw6q")]
 position = Vector2(1011, 444)
+
+[node name="Moeda2" parent="." unique_id=1915414670 instance=ExtResource("5_pbw6q")]
+position = Vector2(1120, 446)
+
+[node name="Pote" parent="." unique_id=1984015740 instance=ExtResource("6_v1gob")]
+position = Vector2(1373, 515)

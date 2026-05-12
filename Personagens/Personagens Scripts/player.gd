@@ -15,6 +15,8 @@ var jump_cut : float = 0.5  ##fator que "corta" a velocidade do pulo quando o bo
 var health : bool = true	
 #-------------------------------------------
 
+var inventory : int = 0
+
 @onready var cam = $Camera2D
 
 func _ready() -> void:

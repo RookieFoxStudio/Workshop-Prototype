@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cre4bx8rg0oox"]
+
+[ext_resource type="Script" uid="uid://vc72153mepwo" path="res://pote.gd" id="1_jmab7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lwphj"]
+radius = 34.058773
+
+[node name="Pote" type="Area2D" unique_id=1984015740]
+script = ExtResource("1_jmab7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1491237079]
+shape = SubResource("CircleShape2D_lwphj")
+debug_color = Color(0.5764706, 0.5529412, 0.03137255, 1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

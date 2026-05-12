@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://uwajh5pyubbe"]
+[gd_scene format=3 uid="uid://uwajh5pyubbe"]
 
 [ext_resource type="Script" uid="uid://bpl8ytoycm6qf" path="res://Scenes/Scenes_codes/tela_inicio.gd" id="1_8r61g"]
 [ext_resource type="Texture2D" uid="uid://cwfot612jdg5d" path="res://Assets/Tela inicio - workshop(base).jpg" id="2_hdea7"]
@@ -41,7 +41,7 @@ _data = {
 &"aparecer_título": SubResource("Animation_hfb6n")
 }
 
-[node name="Tela Início" type="Control"]
+[node name="Tela Início" type="Control" unique_id=1542923693]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -50,7 +50,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8r61g")
 
-[node name="Background" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="." unique_id=562317688]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -63,7 +63,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_hdea7")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=590549368]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -78,7 +78,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 50
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=2134853050]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
@@ -86,11 +86,11 @@ theme_override_fonts/font = ExtResource("3_mqekq")
 theme_override_font_sizes/font_size = 129
 text = "Fortune of Shamrock"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer" unique_id=2026645857]
 layout_mode = 2
 size_flags_vertical = 8
 
-[node name="Jogar" type="Button" parent="VBoxContainer/VBoxContainer"]
+[node name="Jogar" type="Button" parent="VBoxContainer/VBoxContainer" unique_id=1126961722]
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_fonts/font = ExtResource("4_mo3p5")
@@ -98,20 +98,18 @@ theme_override_font_sizes/font_size = 43
 text = "JOGAR"
 flat = true
 
-[node name="Sair" type="Button" parent="VBoxContainer/VBoxContainer"]
+[node name="Sair" type="Button" parent="VBoxContainer/VBoxContainer" unique_id=224257191]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_mo3p5")
 theme_override_font_sizes/font_size = 43
 text = "SAIR"
 flat = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_gpym4")
-}
-autoplay = "aparecer_título"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=283833733]
+libraries/ = SubResource("AnimationLibrary_gpym4")
+autoplay = &"aparecer_título"
 
-[node name="Música de Início" type="AudioStreamPlayer2D" parent="."]
+[node name="Música de Início" type="AudioStreamPlayer2D" parent="." unique_id=800024648]
 autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/VBoxContainer/Jogar" to="." method="_on_jogar_pressed"]
